@@ -70,4 +70,15 @@ public class Main
 	    }
 	    return dp[n];
 	}
+	
+	// just for learning
+	for(int i = 0; i < dp.length; i++){
+		if(i == 1){
+		    qb[i] = qb[i - 1];
+		}else if(i == 2){
+		    qb[i] = qb[i - 1] + qb[i - 2];
+		}else{
+	            qb[i] = qb[i - 1] + qb[i - 2] + qb[i - 3];
+		}
+	}
 } 
