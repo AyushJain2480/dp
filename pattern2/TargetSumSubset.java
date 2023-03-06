@@ -27,13 +27,13 @@
 public class Main
 {
 	public static void main(String[] args) {
-		int[] arr = {4,2,7,1,3,3};
+	    int[] arr = {4,2,7,1,3,3};
 	    
-	  for (int i = 0; i <= 50; i++) {
-      int target = i;
-      boolean ans = sumSubsets(arr, target);
-      System.out.println(ans ? "yes" : "no");
-    } 
+	    for (int i = 0; i <= 50; i++) {
+            int target = i;
+            boolean ans = sumSubsets(arr, target);
+            System.out.println(ans ? "yes" : "no");
+        }
 	}
 	public static boolean sumSubsets(int[] arr , int target){
 	    int n = arr.length;
@@ -55,7 +55,7 @@ public class Main
 	                if(j < val){
 	                    dp[i][j] = dp[i - 1][j];
 	                }else{
-	                    dp[i][j] = (dp[i - 1][j] || dp[i - 1][j - val] ? true : false);
+	                    dp[i][j] = (dp[i - 1][j] || dp[i - 1][j - val]);
 	                }
 	            }
 	        }
