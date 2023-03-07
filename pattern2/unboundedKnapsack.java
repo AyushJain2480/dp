@@ -5,6 +5,8 @@
 // yha batana he maxm paise kitne banege as far as this question is concerned both combination and permutation
 // will give the same result 
 // maxm kitne paise bane to permutation ya combination se fark nhi padta par print me pdta he 
+// simple logic why both comb and permutation will work = if you add 5 + 4 or 4 + 5  it doesn't matter answer will  
+// always be the same.
 
 public class Main
 {
