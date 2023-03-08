@@ -23,3 +23,7 @@ same here bas itna hi funda he fir choti problem se bdi problem ki tarf solve kr
 // storage and meaning 
 // direction - from smaller problem to bigger problem 
 // travel and solve
+
+ek or chij starting me table bharte time choti problem ke sayd ans phle se pta honge unhe table m bhardo 
+ya phir kuch indexes tak dekh ke hi smjra hoga ans unhe table m bhardo kyuki ho skta he pattern starting me smj ni ay 
+fir thoda bhrne ke bad patttern dhudne ki kosish kro 
