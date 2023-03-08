@@ -1,0 +1,25 @@
+dekho sbse bdi problem to yai he dp lagani kab he question me dekho ki kya choti problem like pucha ni jayga choti problm 
+ke bare me pucha jayga fib(200) kya hoga like in climbstairs Q ki btao 100 se 0 utarne me kitne tarike he like that 
+ya arrange buildings hua jisme 10 buildings arrange krni ho without B's consequence or vo no 1 consequences vala question 
+ya string decoding "123445" ya count subseq of a^ib^jc^k like in sab question me ek idea pta hona chahiye ki dp 
+use hi kyu horai he bhai dekho in questions me jo pucha jayga vo badi problem hogi sbse badi problem par vo na dekh kar 
+choti problem ko dekho jese kya fib(0) ya like fib(1) kya hoga like 1 se 0 stairs utarne me kitna step lgega like 
+1 building arrange karne me kya hoga like 1 length ki string jisme no 2 consec 1's sath me ho kya hogi like 
+"1" , "12" inki decodings kya hogi like sirf a's vali string me kitne subseq honge 
+
+hume ye dekhna he ki kya in choti problems ko leke hum inse badi problem bna skte he or banate banate kya humari sbse
+badi problem ka soln bana skte he agar ha to dp use krni he bat khtm 
+like fib(0) fib(1) se fib(2) bna skte ho than fib(2) fib(1) se fib(3) bna skte ho krte krte fib(198) fib(199) se fib(200)
+bna skte ho to choti problem krte krte badi ka soln milgya dp lgao 
+ye 1 length ki string jisme no 2 conseq 1 ho 2 hi hogi na ek 1 or 0 ese hi 2 length ki string ka find kro 3 ka 
+like pichli bar jo solve kia uska ab use kidr hora isme vo dekho pichli bar jo 0 par end hue unme ab 1 lga do to nai length 
+ki milegi par kya jo 1 par end hue unme lga skte ho ni vrna 2 conseq 1 hojayge  see pattern milgya 
+"1" ki encoding pta kro see 2 ki add krde usme to 12 ki ni miljaygi 3 ki krde to fir 4 fir 4 fir 5 like see direct 
+dikhra choti problem se badi problem ka hal milra na 
+a+b+c+ see a+ ki sari nikal le fir unme b+ lga de to a+b+ vali mil jaygi na fir a+b+ me c+ lga de to a+b+c+ mil jaygi na 
+same here bas itna hi funda he fir choti problem se bdi problem ki tarf solve krte jao like direction than travel and solve 
+// tabulation 
+// first dp kis question me lgegi pta krskte ab upar se
+// storage and meaning 
+// direction - from smaller problem to bigger problem 
+// travel and solve
