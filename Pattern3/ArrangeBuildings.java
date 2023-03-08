@@ -16,20 +16,21 @@
 
 public class Main
 {
-	public static void main(String[] args) {
-	     System.out.println(arrangeBuildings(5));
-	}
-	
-	public static int arrangeBuildings(int n){
-	     int ocb = 1;
-	     int ocs = 1;
-	     for(int i = 2; i <= n; i++){
-	         int ncb = ocs;
-	         int ncs = ocs + ocb;
-	         
-	         ocs = ncs;
-	         ocb = ncb;
-	     }
-	     return (ocb + ocs) * (ocb + ocs);
-	}
+    public static void main(String[] args) {
+       System.out.println(TotalWays(5));
+    }
+    public static int TotalWays(int N)
+    {
+      long mod = (long)Math.pow(10,9) + 7;     
+      long ocb = 1;
+      long ocs = 1;
+      for(int i = 2; i <= N; i++){
+          long ncb = (ocs) % mod;
+          long ncs = (ocs + ocb) % mod;
+          
+          ocb = ncb;
+          ocs = ncs;
+      }
+      return (int)((ocb + ocs) % mod * (ocb + ocs) % mod);
+    }
 }
