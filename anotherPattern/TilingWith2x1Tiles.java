@@ -1,6 +1,10 @@
 import java.io.*;
 import java.util.*;
 
+// if you fill the first tile vertically the left unfilled floor to add tiles are n - 1
+// if you fill the first tile horizontally the left unfilled floor to add tiles are n - 2 and one block 2 x 1 
+// that takes 1 so overall takes n - 2
+// so the ans is f(n) = f(n - 1) + f(n - 2)
 public class Main {
 
     public static void main(String[] args) throws Exception {
