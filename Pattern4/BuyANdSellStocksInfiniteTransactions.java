@@ -38,3 +38,16 @@ public class Main {
         System.out.println(profit);
     }
 }
+/// wow we just need to calculate the profit for every node if there is an increment
+class Solution {
+    public int maxProfit(int[] arr) {
+        int profit = 0;
+        int n = arr.length;
+        for(int i = 1; i < n; i++){
+            if(arr[i] > arr[i - 1]){
+                profit += arr[i] - arr[i - 1];
+            }
+        }
+        return profit;
+    }
+}
