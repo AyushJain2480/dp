@@ -1,3 +1,8 @@
+// agar n length string he to total substrings n(n + 1) / 2 milti he 
+// brute force se complexity O(n2) * n means O(n3) milegi 
+// n2 sari substring nikalne ki or vhi n pal dekhne ki 
+
+// but better dp se krskte he with n2 space and n2 time 
 import java.io.*;
 import java.util.*;
 
