@@ -19,6 +19,26 @@
 // Overall, the connection between the Catalan numbers and the number of structurally unique binary search trees with n nodes is an interesting and useful result in mathematics and computer science.
 
 
+// Explanation for the unique binary search trees
+
+// IF we have 4 nodes consider each as root node and find its different left and right subtree possible 
+// considering 1st node as a root node in 1,2,3,4
+// numTree[4] = 
+// considering 1st value as a root 
+// now left side has 0 nodes left but right side has 3 nodes left
+// numTree[1] * numTree[3] (combinations)
+// recursion use hora he ki 3 node se kitne combination bnskte h vo store hoga pehle hi 
+// considering 2nd value as a root 
+// 1,2,3,4
+// if 2 is root than in left only 1 is left and for right 3 and 4 is left 
+// numTree[1] * numTree[2] (combinations) mtlb 2 node se kitne combination bnskte * 1 se 
+// considering 3nd value as a root 
+// 1,2,3,4
+// if 3 is node left side has 1 and 2 and right side has 4 
+// numTree[2] * numTree[1]
+// considering last node as root node 
+// numTree[3] * numTree[0]
+// calcualte the sum of all the combinations.
 import java.io.*;
 import java.util.*;
 
@@ -40,6 +60,3 @@ public static void main(String[] args) throws Exception {
     System.out.println(dp[n]);
  }
 }
-
-
-// Explanation for the unique binary search trees
