@@ -23,6 +23,8 @@
 // (0)3 undar = 0 bahar = 3
 
 // f(3) * f(0) + f(2) * f(1) + f(1) * f(2) + f(0) * f(3)
+// f(3) = (2)0 + (1)1 + (0)2
+// f(4) = (3)0 + (2)1 + (1)2 + (0)3
 // as we can see this is catalan number 
 // pehle question me root fix kiya tha uske left or right variations nikale the mtlb subtrees 
 // yha ek piar fix kiya or uske undar or bahar ke variations nikale
