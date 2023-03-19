@@ -1,1 +1,22 @@
 These are some catalan numbers pattern dp questions
+
+Cn = C0*Cn-1 + C1*Cn-2 + ----- Cn-1*C0
+
+Catalan number --> Cn
+Number of BST  --> Cn
+Count of Valleys and mountains --> Cn
+DykWords --> Cn
+Count Brackets --> Cn
+Circle and Chords --> Cn/2
+No. of ways of triangulation --> Cn-2
+
+In Count brackets () -> no of closed parenthesis open se jyda nhi ho skte 
+In mountains sea level se niche nhi ja skte means no of downstrokes upstrokes se jyada ni hone chahiye
+In Dyk words VH no of H , V se jyda nhi hone chahiye
+
+FOr n = 3 means 3 pair of (), /\ or VH
+ek pair bnado baki bahr or undr arrange krado
+(2)0 + (1)1 + (0)2
+/2\0 + /1\1 + /0\2
+V2H0 + V1H1 + V2H0
+
