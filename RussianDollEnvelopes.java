@@ -20,6 +20,10 @@
 // -------------- height bhi bdegi kyki longest inc subseq 
 // isse maxm no of envelopes which can be nested mil jayge
 
+// jese north bhi chota ho south bhi chota ho 
+// mtlb agar esa question ho ki 1st parameter bhi chota ho second parameter bhi to 
+// phla wala sort krdo dusre me lis lga do 
+
 import java.io.*;
 import java.util.*;
 
