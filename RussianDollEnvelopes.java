@@ -74,5 +74,32 @@ public class Main {
        }
        System.out.println(ovmax);
     }
+}
 
+// Its giving TLE but its ok in interview it is too difficult to tell the optimise approach 
+
+class Solution {
+    public int maxEnvelopes(int[][] envelopes) {
+        // sorting on the basis of 0th index which is width
+        // This line is too cool haha
+        Arrays.sort(envelopes,(a,b) -> a[0] - b[0]);
+
+        int ovmax = 0;
+        int[] dp = new int[envelopes.length];
+        for(int i = 0; i < dp.length; i++){
+            int max = 0;
+            for(int j = 0; j < i; j++){
+                if(envelopes[j][0] < envelopes[i][0] &&  envelopes[j][1] < envelopes[i][1]){
+                    if(dp[j] > max){
+                        max = dp[j];
+                    }
+                }
+            }
+            dp[i] = max + 1;
+            if(dp[i] > ovmax){
+                ovmax = dp[i];
+            }
+        }
+        return ovmax;
+    }
 }
