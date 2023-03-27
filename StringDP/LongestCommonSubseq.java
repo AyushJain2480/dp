@@ -28,6 +28,9 @@ class Solution {
 
 
 // tabulation top down 
+// l(s1,s2) = l(c1r1,c2r2)
+// l(s1,s2)  ----> [1 + l(r1,r2)]  when {c1 = c2}
+//           ----> max(l(r1,s2),l(s1,r2)) when c1 != c2
 class Solution {
    
     public int longestCommonSubsequence(String s1, String s2) {
